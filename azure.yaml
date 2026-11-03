@@ -1,0 +1,8 @@
+name: crossfitmentalis
+metadata:
+  template: crossfitmentalis-static-appservice
+services:
+  crossfitmentalis:
+    project: .
+    host: appservice
+    language: js

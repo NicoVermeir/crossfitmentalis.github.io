@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("scoutTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="CrossFit Mentalis in Merchtem. Persoonlijke coaching, doordachte workouts en een hechte community.">
+  <title>CrossFit Mentalis | Start small. Finish strong.</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+  <link rel="apple-touch-icon" href="assets/favicon-180.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skipLink">Ga naar de inhoud</a>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="CrossFit Mentalis home">
+      <img src="assets/mentalis-wordmark.svg" alt="CrossFit Mentalis">
+    </a>
+    <div class="header-actions">
+      <div class="language-switcher" role="group" aria-label="Taal kiezen" data-i18n-aria="languageLabel">
+        <button type="button" data-language="nl" aria-pressed="true">NL</button>
+        <button type="button" data-language="fr" aria-pressed="false">FR</button>
+        <button type="button" data-language="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+        <span class="sr-only" data-i18n="menuOpen">Menu openen</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Hoofdnavigatie" data-i18n-aria="navLabel">
+        <a href="#mentalis" data-i18n="navWhy">Waarom Mentalis</a>
+        <a href="#aanbod" data-i18n="navOffer">Aanbod</a>
+        <a href="#lidmaatschappen" data-i18n="navMemberships">Lidmaatschappen</a>
+        <a href="#media" data-i18n="navMedia">Media</a>
+        <a class="nav-cta" href="https://dtlkcd.pushpress.com/landing/plans/plan_bf9dbf14b807b3/login" data-i18n="navTrial">Gratis proefles</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="heroEyebrow">CrossFit in Merchtem</p>
+        <a class="hero-location" href="https://www.google.com/maps/search/?api=1&amp;query=Gasthuisstraat+24%2C+1785+Merchtem" target="_blank" rel="noopener" data-i18n-aria="heroAddressAria" aria-label="Bekijk onze locatie op Google Maps">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+          <span data-i18n="heroAddress">Gasthuisstraat 24, 1785 Merchtem</span>
+        </a>
+        <h1>Start small.<br><span>Finish strong.</span></h1>
+        <p class="hero-intro" data-i18n="heroIntro">Sterker worden begint niet met perfect zijn. Het begint met binnenstappen. Wij zorgen voor de coaching, een workout op jouw niveau en mensen die je graag zien terugkomen.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="https://dtlkcd.pushpress.com/landing/plans/plan_bf9dbf14b807b3/login"><span data-i18n="heroTrial">Probeer een gratis les</span> <span aria-hidden="true">→</span></a>
+          <a class="quiet-link" href="#mentalis" data-i18n="heroDiscover">Leer ons kennen</a>
+        </div>
+      </div>
+
+      <div class="hero-brand" aria-label="CrossFit Mentalis">
+        <img src="assets/mentalis-wordmark.svg" alt="">
+        <p data-i18n="heroBrandLine">Coaching · Community · Progressie</p>
+      </div>
+
+      <p class="hero-footnote" data-i18n="heroFootnote">Iedereen start ergens.</p>
+    </section>
+
+    <section class="cta">
+      <div>
+        <p class="eyebrow" data-i18n="ctaEyebrow">Eerste keer?</p>
+        <h2 data-i18n-html="ctaTitle">Je hoeft niet fit te zijn<br>om te <span>beginnen.</span></h2>
+      </div>
+      <div class="cta-copy">
+        <p data-i18n="ctaText">Boek een gratis proefles, mail ons met je vragen of spring tijdens de openingsuren binnen om de sfeer op te snuiven.</p>
+        <a class="button button-dark" href="https://dtlkcd.pushpress.com/landing/plans/plan_bf9dbf14b807b3/login"><span data-i18n="ctaButton">Plan je proefles</span> <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="principles" aria-label="Onze aanpak" data-i18n-aria="principlesLabel">
+      <p data-i18n="principleCoaching">Persoonlijke coaching</p>
+      <p data-i18n="principleWorkouts">Workouts op jouw niveau</p>
+      <p data-i18n="principleCommunity">Een community die je kent</p>
+    </section>
+
+    <section class="about section" id="mentalis">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="aboutEyebrow">Waarom Mentalis</p>
+        <h2 data-i18n-html="aboutTitle">Geen anonieme fitness.<br>Wel een plek waar je <span>vooruitgaat.</span></h2>
+      </div>
+      <div class="about-content">
+        <p class="lead" data-i18n="aboutLead">Iedereen kan aan CrossFit doen. Elke workout wordt aangepast aan jouw ervaring en mogelijkheden. Zo werk je veilig en gericht aan kracht, conditie en vertrouwen.</p>
+        <div class="value-list">
+          <article>
+            <span>01</span>
+            <div><h3 data-i18n="valueOneTitle">Trainen onder professionele begeleiding</h3><p data-i18n="valueOneText">Onze Level 3-coaches geven je duidelijke uitleg, bewaken je techniek en bieden feedback waar je echt iets aan hebt.</p></div>
+          </article>
+          <article>
+            <span>02</span>
+            <div><h3 data-i18n="valueTwoTitle">Er zit een plan achter</h3><p data-i18n="valueTwoText">De trainingen bouwen op elkaar voort. Geen willekeurige oefeningen, wel duurzame progressie.</p></div>
+          </article>
+          <article>
+            <span>03</span>
+            <div><h3 data-i18n="valueThreeTitle">Je traint nooit alleen</h3><p data-i18n="valueThreeText">Je doet de workout op jouw niveau, samen met mensen die hetzelfde doel delen: beter worden.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="box">
+      <div class="box-photo">
+        <img src="assets/coaches.png" alt="De coaches van CrossFit Mentalis" data-i18n-alt="boxImageAlt">
+      </div>
+      <div class="box-copy">
+        <p class="eyebrow" data-i18n="boxEyebrow">In de box</p>
+        <h2 data-i18n-html="boxTitle">Kom zoals je bent.<br>Ga sterker naar huis.</h2>
+        <p data-i18n="boxText">Van je eerste les tot je honderdste WOD: de coaches helpen je om bewegingen goed uit te voeren en elke training haalbaar én uitdagend te maken.</p>
+      </div>
+      <div class="schedule-wrap">
+        <div class="schedule-heading">
+          <div>
+            <p class="eyebrow" data-i18n="scheduleEyebrow">Weekrooster</p>
+            <h3 data-i18n="scheduleTitle">Wanneer kan je trainen?</h3>
+          </div>
+          <div class="schedule-legend" aria-label="Lestypes" data-i18n-aria="scheduleLegendLabel">
+            <span><i class="legend-dot open-gym-dot"></i><span data-i18n="scheduleOpenGym">Open gym</span></span>
+            <span><i class="legend-dot wod-dot"></i>WOD</span>
+            <span><i class="legend-dot friend-dot"></i><span data-i18n="scheduleBringFriend">Hyrox</span></span>
+          </div>
+        </div>
+        <div class="schedule-table-scroll">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th scope="col" data-i18n="scheduleDay">Dag</th>
+                <th scope="col" data-i18n="scheduleOpenGym">Open gym</th>
+                <th scope="col">Workout of the Day · WOD</th>
+                <th scope="col" data-i18n="scheduleSpecial">Hyrox</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" data-i18n="monday">Maandag</th>
+                <td data-label-key="scheduleOpenGym"><span class="session open-gym">15:00</span><span class="session open-gym">16:00</span></td>
+                <td data-label-key="scheduleWod"><span class="session wod">17:00</span><span class="session wod">18:15</span><span class="session wod">19:30</span></td>
+                <td data-label-key="scheduleSpecial"><span class="no-class">—</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="tuesday">Dinsdag</th>
+                <td data-label-key="scheduleOpenGym"><span class="session open-gym">15:00</span><span class="session open-gym">16:00</span></td>
+                <td data-label-key="scheduleWod"><span class="session wod">17:00</span><span class="session wod">18:15</span><span class="session wod">19:30</span></td>
+                <td data-label-key="scheduleSpecial"><span class="no-class">—</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="wednesday">Woensdag</th>
+                <td data-label-key="scheduleOpenGym"><span class="session open-gym">15:00</span><span class="session open-gym">16:00</span></td>
+                <td data-label-key="scheduleWod"><span class="session wod">17:00</span><span class="session wod">18:15</span><span class="session wod">19:30</span></td>
+                <td data-label-key="scheduleSpecial"><span class="no-class">—</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="thursday">Donderdag</th>
+                <td data-label-key="scheduleOpenGym"><span class="session open-gym">15:00</span><span class="session open-gym">16:00</span></td>
+                <td data-label-key="scheduleWod"><span class="session wod">17:00</span><span class="session wod">18:15</span><span class="session wod">19:30</span></td>
+                <td data-label-key="scheduleSpecial"><span class="no-class">—</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="friday">Vrijdag</th>
+                <td data-label-key="scheduleOpenGym"><span class="session open-gym">15:00</span></td>
+                <td data-label-key="scheduleWod"><span class="session wod">17:00</span><span class="session wod">18:15</span></td>
+                <td data-label-key="scheduleSpecial"><span class="no-class">—</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="saturday">Zaterdag</th>
+                <td data-label-key="scheduleOpenGym"><span class="no-class">—</span></td>
+                <td data-label-key="scheduleWod"><span class="no-class">—</span></td>
+                <td data-label-key="scheduleSpecial"><span class="session friend">09:00</span><span class="session friend">10:15</span><small data-i18n="scheduleBringFriend">Team WOD</small></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="sunday">Zondag</th>
+                <td data-label-key="scheduleOpenGym"><span class="no-class">—</span></td>
+                <td data-label-key="scheduleWod"><span class="no-class">—</span></td>
+                <td data-label-key="scheduleSpecial"><span class="no-class" data-i18n="scheduleClosed">Geen lessen</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="schedule-note">
+          <span data-i18n="scheduleNote">Lessen duren 60 minuten en kunnen wijzigen. Controleer het actuele rooster voor je komst.</span>
+          <a href="https://www.crossfit.com/gym/35349/crossfit-mentalis" data-i18n="scheduleSource">Officiële bron</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="offer section" id="aanbod">
+      <div class="section-heading compact">
+        <p class="eyebrow" data-i18n="offerEyebrow">Train bij Mentalis</p>
+        <h2 data-i18n-html="offerTitle">Jouw tempo.<br>Onze <span>coaching.</span></h2>
+      </div>
+      <div class="offer-grid">
+        <article>
+          <p class="offer-number">01</p>
+          <h3>CrossFit</h3>
+          <p data-i18n="offerCrossfitText">Gevarieerde groepslessen waarin kracht, conditie en functionele beweging samenkomen.</p>
+        </article>
+        <article>
+          <p class="offer-number">02</p>
+          <h3 data-i18n="offerOpenGymTitle">Open gym</h3>
+          <p data-i18n="offerOpenGymText">Extra tijd om zelfstandig aan je techniek, kracht of persoonlijke doelen te werken.</p>
+        </article>
+        <article>
+          <p class="offer-number">03</p>
+          <h3>Start to CrossFit</h3>
+          <p data-i18n="offerStartText">Een toegankelijke start voor wie de basis rustig en onder begeleiding wil leren.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="memberships section" id="lidmaatschappen">
+      <div class="membership-intro">
+        <p class="eyebrow" data-i18n="membershipsEyebrow">Lidmaatschappen</p>
+        <h2 data-i18n="membershipsTitle">Kies wat bij je week past.</h2>
+        <p data-i18n="membershipsText">Alle formules geven toegang tot de lessen en open gym. Reserveren doe je eenvoudig via de app.</p>
+      </div>
+      <div class="plans">
+        <article class="plan">
+          <div><p class="plan-kicker" data-i18n="liteKicker">8 lessen per 4 weken</p><h3>Lite Year</h3></div>
+          <p class="price"><span>€</span>69 <small data-i18n="perFourWeeks">/ 4 weken</small></p>
+          <ul><li data-i18n="liteTraining">2 trainingen per week</li><li data-i18n="openGymAccess">Toegang tot open gym</li><li data-i18n="bookApp">Boeken via de app</li></ul>
+          <a href="mailto:info@crossfitmentalis.com?subject=Vraag%20over%20CrossFit%20Mentalis"><span data-i18n="moreInfo">Mail ons</span> <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="plan featured">
+          <div><p class="plan-kicker" data-i18n="unlimitedKicker">Onbeperkt trainen</p><h3>Unlimited Year</h3></div>
+          <p class="price"><span>€</span>99 <small data-i18n="perFourWeeks">/ 4 weken</small></p>
+          <ul><li data-i18n="unlimitedClasses">Ongelimiteerde lessen</li><li data-i18n="unlimitedYearTerm">12 maanden trainen, betaling elke 4 weken</li><li data-i18n="openGymAccess">Toegang tot open gym</li><li data-i18n="bookApp">Boeken via de app</li></ul>
+          <a href="mailto:info@crossfitmentalis.com?subject=Vraag%20over%20CrossFit%20Mentalis"><span data-i18n="moreInfo">Mail ons</span> <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="plan">
+          <div><p class="plan-kicker" data-i18n="founderKicker">Een jaar voluit</p><h3>Jaar abonnement</h3></div>
+          <p class="price"><span>€</span>1199 <small data-i18n="perYear">/ jaar</small></p>
+          <ul><li data-i18n="unlimitedClasses">Ongelimiteerde lessen</li><li data-i18n="openGymAccess">Toegang tot open gym</li><li data-i18n="bookApp">Boeken via de app</li></ul>
+          <a href="mailto:info@crossfitmentalis.com?subject=Vraag%20over%20CrossFit%20Mentalis"><span data-i18n="moreInfo">Mail ons</span> <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+      <div class="walk-in">
+        <br />
+        <h3 data-i18n="walkInTitle">Liever even langskomen?</h3>
+        <p data-i18n="walkInText">Je hoeft niets vooraf te regelen. Wandel tijdens de openingsuren binnen, stel je vragen aan de coaches en snuif de sfeer op. Liever eerst schrijven? Mail ons gerust.</p>
+        <a href="mailto:info@crossfitmentalis.com?subject=Vraag%20over%20CrossFit%20Mentalis">info@crossfitmentalis.com <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="media section" id="media">
+      <div class="media-intro">
+        <div>
+          <p class="eyebrow" data-i18n="mediaEyebrow">In de box</p>
+          <h2 data-i18n-html="mediaTitle">Bekijk Mentalis<br><span>in beweging.</span></h2>
+        </div>
+        <div class="media-copy">
+          <p data-i18n="mediaText">Krijg een beeld van de Workouts, coaching en de sfeer in onze community. Voor meer, klik door naar onze socials en volg ons.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/crossfitmentalis/" target="_blank" rel="noopener noreferrer">
+              <span>Instagram</span><span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61575794041653" target="_blank" rel="noopener noreferrer">
+              <span>Facebook</span><span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="video-grid">
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/dAe2ZoSmjBM?feature=oembed"
+              title="CrossFit Mentalis YouTube Short 1"
+              data-i18n-title="mediaVideoOneTitle"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+          <div class="video-meta"><p data-i18n="mediaVideoOneLabel">Dit is CrossFit Mentalis</p></div>
+        </article>
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/dC6LDvBYfkk?feature=oembed"
+              title="CrossFit Mentalis YouTube Short 2"
+              data-i18n-title="mediaVideoTwoTitle"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+          <div class="video-meta"><p data-i18n="mediaVideoTwoLabel">Dit is hoe we trainen</p></div>
+        </article>
+        <article class="video-card">
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/Az5zDIlRURY?feature=oembed"
+              title="CrossFit Mentalis YouTube Short 3"
+              data-i18n-title="mediaVideoThreeTitle"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+          <div class="video-meta"><p data-i18n="mediaVideoThreeLabel">Wie kan er starten?</p></div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><img src="assets/mentalis-wordmark.svg" alt="CrossFit Mentalis"></a>
+    <p>Start small. Finish strong.</p>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/crossfitmentalis/">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61575794041653">Facebook</a>
+      <a href="mailto:info@crossfitmentalis.com" data-i18n="footerContact">info@crossfitmentalis.com</a>
+      <span data-i18n="footerLocation">Merchtem, België</span>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> CrossFit Mentalis</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
